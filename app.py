@@ -18,7 +18,7 @@ def process_trade():
     try:
         data = parse_trade(text)
         data = apply_rules(data)
-        data["Time"] = get_time_cst()
+        
 
         send_to_kafka(data)
 
